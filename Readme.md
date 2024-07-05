@@ -15,6 +15,13 @@ python camera.py
 python image.py --image sample/face.png
 ```
 
+#### For Docker user
+```
+$ docker build -t vmakeup:latest .
+
+$ docker run -it -v=%cd%:/workspace vmakeup:latest
+```
+
 # Introduction
 
 In this project Mediapipe [1] facial landmarks and opencv is used to add makeup on facial features.
