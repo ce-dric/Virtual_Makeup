@@ -51,8 +51,8 @@ def main(image_path):
     )
     # combine the image and mask with w.r.to weights
     output = cv2.addWeighted(image, 1.0, mask, 0.2, 1.0)
-    # display the image
-    show_image(output)
+    # save the image
+    cv2.imwrite("output.jpg", output)
 
 if __name__ == "__main__":
     # argument parser
